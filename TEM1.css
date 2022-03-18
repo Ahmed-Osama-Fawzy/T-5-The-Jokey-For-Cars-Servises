@@ -1,0 +1,295 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+    color: azure;
+    background-color: red;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* the tart of header */
+header {
+    display: flex;
+    margin: 0;
+}
+header nav {
+    flex-direction: column;
+    width: 50%;
+    color: azure;
+    background-color: black;
+    padding: 2.5%;
+}
+header nav svg {
+    transition:1s ;
+}
+header nav svg:hover {
+    color: red;
+}
+header nav h2 {
+    display: inline;
+    padding: 12px ;
+    cursor: copy;
+}
+header nav h2 span {
+    color: red;
+}
+header nav ul {
+    list-style: none;
+    cursor: default;
+}
+header nav ul li {
+    display: inline-block;
+    padding-left: 6px;
+    font-size: 17px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: azure;
+    transition: 1s;
+}
+header nav ul li a:hover {
+    color: red;
+}
+/* the end of header */
+/* the start of section 1 */
+.background {
+    width: 100%;
+    background-image: url("images/FB_IMG_1623835564400.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    position: relative;
+    height: 783px;
+    color: black;
+}
+.background div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.background div h1 {
+    font-size: 60px;
+    cursor: none;
+}
+.background div h1 span {
+    color: red;
+}
+/* the end of section 1 */
+
+/* the start of Servies */
+.Servies {
+    width: 100%;
+    margin-top: 250px;
+    overflow: hidden;
+}
+.Servies div {
+    float: left;
+    width: 40%;
+    margin: 2.5%;
+    padding: 2.5%;
+}
+.Servies h1 {
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 800;
+    transition: 1s;
+}
+.Servies h1 span {
+    display: block;
+    color: red;
+    margin-bottom: -100px;
+}
+.Servies h1:hover{
+    opacity: 0.7;
+}
+.Servies div svg {
+    transition: 1s;
+    color: red;
+}
+.Servies div svg:hover {
+    opacity: 0.5;
+    color: black;
+}
+.Servies div p {
+    opacity: 0.6;
+    line-height: 1.5;
+    transition: 2s;
+}
+.Servies div p:hover {
+    opacity: 1;
+}
+/* the end of Servies */
+
+ /* the start of portofilo */
+.portofilo {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 250px;
+    padding: 0;
+}
+.portofilo div{
+    float: left;
+    width: calc(100% / 3);
+    height: 400px;
+    transition: 2s;
+    position: relative;
+    text-align:center ;
+    vertical-align: middle;
+    filter: opacity(0.7);
+    overflow: hidden;
+}
+.portofilo div:hover {
+    transform: rotateZ(10deg);
+    filter: opacity(1);
+    border-radius: 30px;
+}
+.portofilo h1 {
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 800;
+    transition: 1s;
+}
+.portofilo h1 span {
+    display: block;
+    color: red;
+    margin-bottom: -82px;
+}
+.portofilo h1:hover{
+    opacity: 0.7;
+}
+.portofilo div img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+ /* the end of portofilov */
+
+ /* the srart of Testimoniles */
+.Testimoniles {
+    margin-top: 250px;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.Testimoniles h1 {
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 800;
+    transition: 1s;
+}
+.Testimoniles h1 span {
+    display: block;
+    color: red;
+    margin-bottom: -82px;
+}
+.Testimoniles h1:hover{
+    opacity: 0.7;
+}
+.Testimoniles div {
+    float: left;
+    width: 40%;
+    margin: calc(10% / 4);
+    padding: calc(10% / 4);
+    background-color: red;
+    color: azure;
+    text-align: center;
+    border-radius: 15px;
+    opacity: 0.7;
+    transition: 2s;
+}
+.Testimoniles div:hover {
+    color: black;
+    opacity: 1;
+}
+ /* the end of Testimoniles */
+
+/* the start of footer */
+footer {
+    width: 100%;
+    margin-top: 250px;
+    background-color: red;
+    color: azure;
+}
+footer div{
+    float: left;
+    width: calc(70% /3);
+    margin: 2.5%;
+    padding: 2.5%;
+}
+footer div h1  ,
+footer div .fa-tools {
+    transition: 1s;
+    color: black;
+}
+footer div h1:hover ,
+footer div .fa-tools:hover {
+    color: azure;
+}
+footer div h1 span {
+    color: azure;
+}
+footer div ul {
+    list-style-type: none;
+}
+footer div ul li {
+    transition: 1s;
+    padding: 10px;
+
+    font-size: 20px;
+}
+footer div ul li:hover {
+    color: black;
+}
+footer div label ,
+footer div input {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+footer div  svg {
+    display: inline-block;
+    transition: 2s;
+}
+footer div svg:hover {
+    color: black;
+    opacity: 0.7;
+    transform: translate(-10px , 10px);
+}
+footer section {
+    width: 100%;
+    overflow: hidden;
+}
+footer section div {
+    width: 100%;
+    padding: 6px;
+    margin: 0;
+    text-align: center;
+}
+footer section div  svg{
+    margin-left: 15px;
+    transition: 2s;
+}
+footer section div  svg:hover {
+    color: black;
+    transform: rotateZ(360deg);
+}
+footer section div h3 span {
+    transition: 1s;
+}
+footer section div h3 span:hover {
+    color: black;
+}
