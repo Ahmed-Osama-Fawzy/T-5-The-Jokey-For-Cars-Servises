@@ -1,5 +1,4 @@
 body {
-    width: 900px;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +10,81 @@ body {
 html {
     scroll-behavior: smooth;
   }
+/* Media Quaries */
+@media(max-width:650px){
+    body {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    header {
+        display: block !important;
+    }
+    header nav {
+        width: 96% !important;
+        padding:2% !important;
+    }
+    .Servies h1 ,  .portofilo h1 , .Testimoniles h1{
+        font-size: 60px !important;
+    }
+    .Servies h1 span , .portofilo h1 span , .Testimoniles h1 span {
+        margin-bottom: -60px !important;
+    }
+    .Servies div , .portofilo div , .Testimoniles div {
+        float: left;
+        width: 80% !important;
+        margin: 5% 10% !important;
+    }
+    footer div{
+        float: left;
+        width: 80%  !important;
+        margin:auto !important;
+        padding: 1%;
+    } 
+    footer div input {
+        display: block !important;
+        margin: 3% calc((100% - 160px ) /2) !important;
+    }
+}
+@media(max-width:900px) and (min-width:651px){
+    body {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    header {
+        display: block !important;
+    }
+    header nav {
+        width: 90% !important;
+        padding:5% !important;
+    }
+    .Servies h1 ,  .portofilo h1 , .Testimoniles h1{
+        font-size: 60px !important;
+    }
+    .Servies h1 span , .portofilo h1 span , .Testimoniles h1 span {
+        margin-bottom: -60px !important;
+    }
+    .Servies div , .portofilo div , .Testimoniles div {
+        float: left;
+        width: 40% !important;
+        margin: 2% !important;
+    }
+    footer div{
+        float: left;
+        width: 40%  !important;
+        padding: 1%;
+    }
+    footer div input {
+        display: block !important;
+        margin: 3% calc((100% - 160px ) /2) !important;
+    }
+}
+/* Media Quaries */
 /* the tart of header */
 header {
     display: flex;
